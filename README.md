@@ -58,14 +58,14 @@ To create your own installer:
 3.  **Crucial Step:** Download `ffmpeg.exe` and `aria2c.exe` and place them in the project folder (or add them to your System PATH).
 4.  Run the application:
     ```cmd
-    python gui.py
+    python3 gui.py
     ```
 
 #### Option 2: Build .exe
 1.  Install PyInstaller: `pip install pyinstaller`
 2.  Run the build script:
     ```cmd
-    python build_windows.py
+    python3 build_windows.py
     ```
 3.  The executable will be in the `dist` folder. Don't forget to copy `ffmpeg.exe` and `aria2c.exe` next to the generated `.exe` file!
 
