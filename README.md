@@ -26,7 +26,7 @@ A powerful, modern GUI video downloader application built with Python, `ttkboots
 #### Option 1: Install via .deb package (Recommended)
 If you have the `.deb` file:
 ```bash
-sudo dpkg -i videodownloader_1.0.0_amd64.deb
+sudo dpkg -i videodownloader_5.2.1_amd64.deb
 sudo apt-get install -f  # To install dependencies like aria2 and ffmpeg
 ```
 
