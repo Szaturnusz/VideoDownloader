@@ -13,7 +13,7 @@ from downloader import VideoDownloader
 # Translation Dictionary
 TRANSLATIONS = {
     "en": {
-        "title": "Ultimate Video Downloader",
+        "title": "Ultimate Video Downloader v5.2.1",
         "header": "Video Downloader & Player",
         "download_frame": "Download",
         "url_label": "Video URL:",
@@ -47,7 +47,7 @@ TRANSLATIONS = {
         "delete_confirm_msg": "Are you sure you want to delete this file?"
     },
     "hu": {
-        "title": "Ultimate Video Letöltő",
+        "title": "Ultimate Video Letöltő v5.2.1",
         "header": "Video Letöltő & Lejátszó",
         "download_frame": "Letöltés",
         "url_label": "Videó URL:",

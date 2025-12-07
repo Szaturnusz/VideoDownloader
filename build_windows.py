@@ -23,6 +23,8 @@ def build():
         '--collect-all=curl_cffi',
         '--collect-all=ttkbootstrap',
         '--collect-all=PIL',
+        '--hidden-import=PIL._tkinter_finder',
+        '--hidden-import=PIL.ImageTk',
     ]
     
     PyInstaller.__main__.run(args)

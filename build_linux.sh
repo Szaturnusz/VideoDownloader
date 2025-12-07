@@ -2,7 +2,7 @@
 set -e
 
 APP_NAME="videodownloader"
-VERSION="1.0.0"
+VERSION="5.2.1"
 ARCH="amd64"
 MAINTAINER="Szaturnusz <info@example.com>"
 DESC="Ultimate Video Downloader & Player"
@@ -18,7 +18,13 @@ rm -rf build dist
 # --name: Output name
 # --add-data: Include necessary files (if any, e.g., images)
 # --collect-all: Ensure curl_cffi and other complex packages are included
-pyinstaller --noconfirm --onefile --windowed --icon "app_icon.ico" --name "VideoDownloader" --collect-all curl_cffi --collect-all ttkbootstrap gui.py
+# Fix for PIL/ImageTk issue: add hidden imports
+pyinstaller --noconfirm --onefile --windowed --icon "app_icon.ico" --name "VideoDownloader" \
+    --collect-all curl_cffi \
+    --collect-all ttkbootstrap \
+    --hidden-import="PIL._tkinter_finder" \
+    --hidden-import="PIL.ImageTk" \
+    gui.py
 
 echo "=== Creating Debian Package Structure ==="
 DEB_DIR="deb_package/${APP_NAME}_${VERSION}_${ARCH}"
