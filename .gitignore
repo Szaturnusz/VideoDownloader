@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Distribution / Build
+build/
+dist/
+*.spec
+deb_package/
+
+# Application Data
+Downloads/
+*.log
+
+# IDEs
+.vscode/
+.idea/
